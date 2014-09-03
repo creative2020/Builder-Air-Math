@@ -42,9 +42,12 @@ function mm_feature_image ( $atts ) {
     
     $feature_img = get_stylesheet_directory_uri();
     $placeholder = get_stylesheet_directory_uri();    
+    $mm_title = get_the_title();
     
-    
-    $tt_post_content = 'testing';
+    $tt_post_content = '<div class="feature-img">
+                        <img src="/wp-content/themes/Builder-Air-Math/images/feature.png"/>
+                        <h1 class="feature-title">' . $mm_title .'</h1>
+                        </div>';
     
 // code
 return $tt_post_content;    

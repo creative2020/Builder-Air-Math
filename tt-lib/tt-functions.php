@@ -36,8 +36,8 @@ if( !function_exists("tt_bootstrap_cdn") ) {
         wp_enqueue_style( 'tt-boot-fontawesome' );
 
         // child themes
-        // wp_register_style( 'tt-child', get_stylesheet_directory_uri() . '/tt-child.css', array(), '1.0', 'all' );
-        // wp_enqueue_style( 'tt-child' );
+        wp_register_style( 'tt-main', get_stylesheet_directory_uri() . '/tt-lib/css/tt-main.css', array(), '1.0', 'all' );
+        wp_enqueue_style( 'tt-main' );
     }
 }
 add_action( 'wp_enqueue_scripts', 'tt_bootstrap_cdn' );
