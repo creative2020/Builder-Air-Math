@@ -29,8 +29,8 @@ return $tt_post_content;
 
 //////////////////////////////////////////////////////// MM Logo
 
-add_shortcode( 'mm_logo', 'mm_logo' );
-function mm_logo ( $atts ) {
+add_shortcode( 'mm_feature_image', 'mm_feature_image' );
+function mm_feature_image ( $atts ) {
 
 	// Attributes
 	extract( shortcode_atts(
@@ -40,10 +40,11 @@ function mm_logo ( $atts ) {
 		), $atts )
 	);
     
-    $home = bloginfo('url');
-    $logo = bloginfo( 'stylesheet_directory' ) . '/images/logo.png';
+    $feature_img = get_stylesheet_directory_uri();
+    $placeholder = get_stylesheet_directory_uri();    
     
-    $tt_post_content = '<a href="' . $home . '"><img src="' . $logo . '" alt="Home" style="PADDING-LEFT: 20px"/></a>';
+    
+    $tt_post_content = 'testing';
     
 // code
 return $tt_post_content;    
