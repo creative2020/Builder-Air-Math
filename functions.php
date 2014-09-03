@@ -1,5 +1,8 @@
 <?php
 
+// TT Functions
+require_once('tt-lib/tt-functions.php');
+
 // Tell the main theme that a child theme is running. Do not remove this.
 $GLOBALS['builder_child_theme_loaded'] = true;
 

@@ -367,11 +367,13 @@ h1 img, h2 img, h3 img, h4 img, h5 img, h6 img {
 *********************************************/
 
 .builder-module-navigation {
-	float: right;
 	display: block;
 	line-height: 2;
 	width: 100%;
-	padding: 4em 0 .5em 0;
+	padding: 0.5em 0 0.5em 3.0em !important;
+}
+.builder-module-navigation-outer-wrapper {
+    
 }
 .builder-module-navigation .builder-module-element {
 	margin: 0 !important;
