@@ -32,7 +32,7 @@ if( !function_exists("tt_bootstrap_cdn") ) {
         wp_register_style( 'tt-boot-js', 'http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js', array(), '1.0', 'all' );
         wp_enqueue_style( 'tt-boot-js' );
         
-        wp_register_style( 'tt-boot-fontawesome', 'maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', array(), '1.0', 'all' );
+        wp_register_style( 'tt-boot-fontawesome', 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', array(), '1.0', 'all' );
         wp_enqueue_style( 'tt-boot-fontawesome' );
 
         // child themes
